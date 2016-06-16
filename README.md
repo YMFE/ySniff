@@ -1,11 +1,20 @@
 ## ySniff - 更全面的浏览器检测工具
 
-检测内容如下：
+检测内容示例如下（iOS平台微信浏览器）：
 
 ```json
 {
+    "os": "ios",
+    "osVersion": "9.3.2",
+    "osVersionN": 9,
+    "ios": true,
+    "ipod": false,
+    "ipad": false,
+    "iphone": true,
+    "imobile": true,
+    "android": false,
     "browsers": {
-        "wechat": false,
+        "wechat": "6.3.19",
         "alipay": false,
         "qq": false,
         "weibo": false,
@@ -15,22 +24,14 @@
     "info": {
         "Mozilla": "5.0",
         "AppleWebKit": "601.1.46",
-        "Version": "9.0",
-        "Mobile": "13B143",
-        "Safari": "601.1"
+        "Mobile": "13F69",
+        "MicroMessenger": "6.3.19",
+        "NetType": "WIFI",
+        "Language": "zh_CN"
     },
-    "ipod": false,
-    "ipad": false,
-    "iphone": true,
-    "android": false,
-    "ios": true,
-    "os": "ios",
-    "osVersion": "9.1",
-    "imobile": true,
-    "osVersionN": 9,
     "pixelRatio": 2,
     "retina": true,
-    "webApp": false,
-    "pc": true
+    "webApp": true,
+    "pc": false
 }
 ```
