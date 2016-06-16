@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ySniff</title>
+    <link href="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/styles/shCore.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/styles/shThemeDefault.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
+    <script src="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>
+    <script type="text/javascript" src="./ySniff.pkg.js"></script>
+    <style type="text/css">
+        html, body {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center">ySniff</h1>
+    <pre  class="brush: js"></pre>
+    <p style="text-align:center">
+        <a href="https://github.com/YMFE/ySniff" target="_blank">
+            <img src="http://pic3.36krcnd.com/photo/d063160d8374c53de163e8d287fc0d9d.jpeg" width="50px">
+        </a>
+    </p>
+    <script type="text/javascript">
+        document.querySelector('pre').innerHTML = '\n window.ySniff == ' + JSON.stringify(ySniff, {}, 4);
+        SyntaxHighlighter.defaults.toolbar = false;
+        SyntaxHighlighter.all();
+    </script>
+</body>
+
+</html>
