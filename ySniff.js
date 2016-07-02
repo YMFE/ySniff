@@ -69,16 +69,17 @@ ySniff.pixelRatio = window.devicePixelRatio || 1;
 
 ySniff.retina = ySniff.pixelRatio >= 2;
 
-ySniff.webApp = webApp;
-
 // 浏览器
 for (var key in browsers) {
     if (browsers[key]) {
+        webApp = false;
         ySniff.browsers[key] = browsers[key][2];
     } else {
         ySniff.browsers[key] = false;
     }
 }
+
+ySniff.webApp = ySniff.os == 'ios' && webApp;
 
 // 其他信息
 ua.split(' ').forEach(function(item) {
